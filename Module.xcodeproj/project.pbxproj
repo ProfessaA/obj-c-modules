@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE40D90C18EF1ED90012571D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE40D90B18EF1ED90012571D /* Foundation.framework */; };
+		AE40D93318EF1EFB0012571D /* NSObject+Module.m in Sources */ = {isa = PBXBuildFile; fileRef = AE40D93218EF1EFB0012571D /* NSObject+Module.m */; };
+		AE40D93918EF25160012571D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE40D91C18EF1ED90012571D /* UIKit.framework */; };
+		AE40D93A18EF25160012571D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE40D90B18EF1ED90012571D /* Foundation.framework */; };
+		AE40D93C18EF25160012571D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE40D93B18EF25160012571D /* CoreGraphics.framework */; };
+		AE40D94218EF25160012571D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE40D94018EF25160012571D /* InfoPlist.strings */; };
+		AE40D94418EF25160012571D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE40D94318EF25160012571D /* main.m */; };
+		AE40D94818EF25170012571D /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE40D94718EF25170012571D /* Cedar-iOS.framework */; };
+		AE40D94F18EF25A10012571D /* ModuleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE40D94E18EF25A10012571D /* ModuleSpec.mm */; };
+		AE40D95318EF26BA0012571D /* PublicBehaviorModule.m in Sources */ = {isa = PBXBuildFile; fileRef = AE40D95218EF26BA0012571D /* PublicBehaviorModule.m */; };
+		AE40D95618EF282F0012571D /* Pacifist.m in Sources */ = {isa = PBXBuildFile; fileRef = AE40D95518EF282F0012571D /* Pacifist.m */; };
+		AE40D95918EF29100012571D /* Warmonger.m in Sources */ = {isa = PBXBuildFile; fileRef = AE40D95818EF29100012571D /* Warmonger.m */; };
+		AE40D95B18EF29FC0012571D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE40D95A18EF29FC0012571D /* Default-568h@2x.png */; };
+		AE40D95C18EF2A340012571D /* NSObject+Module.m in Sources */ = {isa = PBXBuildFile; fileRef = AE40D93218EF1EFB0012571D /* NSObject+Module.m */; };
+		AE40D95F18EF31830012571D /* AngryPacifist.m in Sources */ = {isa = PBXBuildFile; fileRef = AE40D95E18EF31830012571D /* AngryPacifist.m */; };
+		AE40D96218EF37AC0012571D /* BehaviorModule.m in Sources */ = {isa = PBXBuildFile; fileRef = AE40D96118EF37AC0012571D /* BehaviorModule.m */; };
+		AE40D96518EF57590012571D /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = AE40D96418EF57590012571D /* Module.m */; };
+		AE40D96618EF57590012571D /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = AE40D96418EF57590012571D /* Module.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE40D90618EF1ED90012571D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AE40D90818EF1ED90012571D /* libModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE40D90B18EF1ED90012571D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AE40D90F18EF1ED90012571D /* Module-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Module-Prefix.pch"; sourceTree = "<group>"; };
+		AE40D91918EF1ED90012571D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AE40D91C18EF1ED90012571D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		AE40D93118EF1EFB0012571D /* NSObject+Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Module.h"; sourceTree = "<group>"; };
+		AE40D93218EF1EFB0012571D /* NSObject+Module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Module.m"; sourceTree = "<group>"; };
+		AE40D93818EF25160012571D /* Spec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spec.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE40D93B18EF25160012571D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AE40D93F18EF25160012571D /* Spec-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Spec-Info.plist"; sourceTree = "<group>"; };
+		AE40D94118EF25160012571D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AE40D94318EF25160012571D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE40D94518EF25160012571D /* Spec-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spec-Prefix.pch"; sourceTree = "<group>"; };
+		AE40D94618EF25160012571D /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		AE40D94718EF25170012571D /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
+		AE40D94E18EF25A10012571D /* ModuleSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ModuleSpec.mm; sourceTree = "<group>"; };
+		AE40D95118EF26BA0012571D /* PublicBehaviorModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicBehaviorModule.h; sourceTree = "<group>"; };
+		AE40D95218EF26BA0012571D /* PublicBehaviorModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicBehaviorModule.m; sourceTree = "<group>"; };
+		AE40D95418EF282F0012571D /* Pacifist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pacifist.h; sourceTree = "<group>"; };
+		AE40D95518EF282F0012571D /* Pacifist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pacifist.m; sourceTree = "<group>"; };
+		AE40D95718EF29100012571D /* Warmonger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Warmonger.h; sourceTree = "<group>"; };
+		AE40D95818EF29100012571D /* Warmonger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Warmonger.m; sourceTree = "<group>"; };
+		AE40D95A18EF29FC0012571D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AE40D95D18EF31830012571D /* AngryPacifist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AngryPacifist.h; sourceTree = "<group>"; };
+		AE40D95E18EF31830012571D /* AngryPacifist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AngryPacifist.m; sourceTree = "<group>"; };
+		AE40D96018EF37AC0012571D /* BehaviorModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BehaviorModule.h; sourceTree = "<group>"; };
+		AE40D96118EF37AC0012571D /* BehaviorModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BehaviorModule.m; sourceTree = "<group>"; };
+		AE40D96318EF57590012571D /* Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module.h; sourceTree = "<group>"; };
+		AE40D96418EF57590012571D /* Module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Module.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE40D90518EF1ED90012571D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE40D90C18EF1ED90012571D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE40D93518EF25160012571D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE40D93C18EF25160012571D /* CoreGraphics.framework in Frameworks */,
+				AE40D93918EF25160012571D /* UIKit.framework in Frameworks */,
+				AE40D94818EF25170012571D /* Cedar-iOS.framework in Frameworks */,
+				AE40D93A18EF25160012571D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE40D8FF18EF1ED90012571D = {
+			isa = PBXGroup;
+			children = (
+				AE40D95A18EF29FC0012571D /* Default-568h@2x.png */,
+				AE40D90D18EF1ED90012571D /* Module */,
+				AE40D93D18EF25160012571D /* Spec */,
+				AE40D90A18EF1ED90012571D /* Frameworks */,
+				AE40D90918EF1ED90012571D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE40D90918EF1ED90012571D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE40D90818EF1ED90012571D /* libModule.a */,
+				AE40D93818EF25160012571D /* Spec.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE40D90A18EF1ED90012571D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE40D90B18EF1ED90012571D /* Foundation.framework */,
+				AE40D91918EF1ED90012571D /* XCTest.framework */,
+				AE40D91C18EF1ED90012571D /* UIKit.framework */,
+				AE40D93B18EF25160012571D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE40D90D18EF1ED90012571D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				AE40D90E18EF1ED90012571D /* Supporting Files */,
+				AE40D93118EF1EFB0012571D /* NSObject+Module.h */,
+				AE40D93218EF1EFB0012571D /* NSObject+Module.m */,
+				AE40D96318EF57590012571D /* Module.h */,
+				AE40D96418EF57590012571D /* Module.m */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		AE40D90E18EF1ED90012571D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE40D90F18EF1ED90012571D /* Module-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE40D93D18EF25160012571D /* Spec */ = {
+			isa = PBXGroup;
+			children = (
+				AE40D94718EF25170012571D /* Cedar-iOS.framework */,
+				AE40D95018EF268F0012571D /* Fixtures */,
+				AE40D94E18EF25A10012571D /* ModuleSpec.mm */,
+				AE40D94618EF25160012571D /* Rakefile */,
+				AE40D93E18EF25160012571D /* Supporting Files */,
+			);
+			path = Spec;
+			sourceTree = "<group>";
+		};
+		AE40D93E18EF25160012571D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE40D93F18EF25160012571D /* Spec-Info.plist */,
+				AE40D94018EF25160012571D /* InfoPlist.strings */,
+				AE40D94318EF25160012571D /* main.m */,
+				AE40D94518EF25160012571D /* Spec-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE40D95018EF268F0012571D /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				AE40D95D18EF31830012571D /* AngryPacifist.h */,
+				AE40D95E18EF31830012571D /* AngryPacifist.m */,
+				AE40D95418EF282F0012571D /* Pacifist.h */,
+				AE40D95518EF282F0012571D /* Pacifist.m */,
+				AE40D95118EF26BA0012571D /* PublicBehaviorModule.h */,
+				AE40D95218EF26BA0012571D /* PublicBehaviorModule.m */,
+				AE40D95718EF29100012571D /* Warmonger.h */,
+				AE40D95818EF29100012571D /* Warmonger.m */,
+				AE40D96018EF37AC0012571D /* BehaviorModule.h */,
+				AE40D96118EF37AC0012571D /* BehaviorModule.m */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE40D90718EF1ED90012571D /* Module */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE40D92B18EF1ED90012571D /* Build configuration list for PBXNativeTarget "Module" */;
+			buildPhases = (
+				AE40D90418EF1ED90012571D /* Sources */,
+				AE40D90518EF1ED90012571D /* Frameworks */,
+				AE40D90618EF1ED90012571D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Module;
+			productName = Module;
+			productReference = AE40D90818EF1ED90012571D /* libModule.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AE40D93718EF25160012571D /* Spec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE40D94B18EF25170012571D /* Build configuration list for PBXNativeTarget "Spec" */;
+			buildPhases = (
+				AE40D93418EF25160012571D /* Sources */,
+				AE40D93518EF25160012571D /* Frameworks */,
+				AE40D93618EF25160012571D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spec;
+			productName = Spec;
+			productReference = AE40D93818EF25160012571D /* Spec.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE40D90018EF1ED90012571D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = AE40D90318EF1ED90012571D /* Build configuration list for PBXProject "Module" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AE40D8FF18EF1ED90012571D;
+			productRefGroup = AE40D90918EF1ED90012571D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE40D90718EF1ED90012571D /* Module */,
+				AE40D93718EF25160012571D /* Spec */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE40D93618EF25160012571D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE40D94218EF25160012571D /* InfoPlist.strings in Resources */,
+				AE40D95B18EF29FC0012571D /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE40D90418EF1ED90012571D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE40D93318EF1EFB0012571D /* NSObject+Module.m in Sources */,
+				AE40D96518EF57590012571D /* Module.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE40D93418EF25160012571D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE40D95F18EF31830012571D /* AngryPacifist.m in Sources */,
+				AE40D96218EF37AC0012571D /* BehaviorModule.m in Sources */,
+				AE40D95918EF29100012571D /* Warmonger.m in Sources */,
+				AE40D96618EF57590012571D /* Module.m in Sources */,
+				AE40D95C18EF2A340012571D /* NSObject+Module.m in Sources */,
+				AE40D95618EF282F0012571D /* Pacifist.m in Sources */,
+				AE40D95318EF26BA0012571D /* PublicBehaviorModule.m in Sources */,
+				AE40D94F18EF25A10012571D /* ModuleSpec.mm in Sources */,
+				AE40D94418EF25160012571D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE40D94018EF25160012571D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE40D94118EF25160012571D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE40D92918EF1ED90012571D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE40D92A18EF1ED90012571D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE40D92C18EF1ED90012571D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Module.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Module/Module-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AE40D92D18EF1ED90012571D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Module.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Module/Module-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AE40D94C18EF25170012571D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/pivotal/workspace/Module/Spec/Frameworks,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spec/Spec-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Spec/Spec-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AE40D94D18EF25170012571D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/pivotal/workspace/Module/Spec/Frameworks,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spec/Spec-Prefix.pch";
+				INFOPLIST_FILE = "Spec/Spec-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE40D90318EF1ED90012571D /* Build configuration list for PBXProject "Module" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE40D92918EF1ED90012571D /* Debug */,
+				AE40D92A18EF1ED90012571D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE40D92B18EF1ED90012571D /* Build configuration list for PBXNativeTarget "Module" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE40D92C18EF1ED90012571D /* Debug */,
+				AE40D92D18EF1ED90012571D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AE40D94B18EF25170012571D /* Build configuration list for PBXNativeTarget "Spec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE40D94C18EF25170012571D /* Debug */,
+				AE40D94D18EF25170012571D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE40D90018EF1ED90012571D /* Project object */;
+}
