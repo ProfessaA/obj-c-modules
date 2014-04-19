@@ -62,7 +62,7 @@ id implementationBlock(BOOL isForInstanceMethods)
     class_replaceMethod(metaClass, @selector(_originalResolveInstanceMethod:), method_getImplementation(originalResolveInstanceMethod), method_getTypeEncoding(originalResolveInstanceMethod));
     class_replaceMethod(metaClass, @selector(resolveInstanceMethod:), newResolveInstanceMethodIMP, method_getTypeEncoding(originalResolveInstanceMethod));
     
-    Method originalResolveClassMethod = class_getInstanceMethod(metaClass, @selector(resolveInstanceMethod:));
+    Method originalResolveClassMethod = class_getInstanceMethod(metaClass, @selector(resolveClassMethod:));
     IMP newResolveClassMethodIMP = imp_implementationWithBlock(implementationBlock(NO));
     class_replaceMethod(metaClass, @selector(_originalResolveClassMethod:), method_getImplementation(originalResolveClassMethod), method_getTypeEncoding(originalResolveClassMethod));
     class_replaceMethod(metaClass, @selector(resolveClassMethod:), newResolveClassMethodIMP, method_getTypeEncoding(originalResolveClassMethod));
